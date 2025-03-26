@@ -1,5 +1,4 @@
-def hello():
-  return "Hello, World!"
+from app import hello
 
-if __name__ == "__main__":
-  print(hello())
+def test_hello():
+  assert hello() == "Hello, World!"
